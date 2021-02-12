@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class Deney1Butonlar : MonoBehaviour
 {
     [SerializeField] GameObject panel;
+    [SerializeField] GameObject winpanel;
+    [SerializeField] GameObject bonuspanel;
 
     public void Geri()
     {
@@ -26,7 +28,8 @@ public class Deney1Butonlar : MonoBehaviour
 
     public void Bonus()
     {
-
+        bonuspanel.gameObject.SetActive(true);
+        winpanel.gameObject.SetActive(false);
     }
 
 }
