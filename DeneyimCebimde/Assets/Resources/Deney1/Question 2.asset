@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d691c6818a7263047877d9ba1b604ab6, type: 3}
-  m_Name: Question
+  m_Name: Question 2
   m_EditorClassIdentifier: 
-  question: "ka\xE7 parma\u011F\u0131n var"
-  option1: 1
-  option2: 2
-  option3: 3
-  option4: 4
-  rightAnswer: 4
+  question: "En k\xFC\xE7\xFCk gezegen hangisidir ?"
+  option1: "Sat\xFCrn"
+  option2: "D\xFCnya"
+  option3: "Merk\xFCr"
+  option4: "Uran\xFCs"
+  rightAnswer: "Merk\xFCr"

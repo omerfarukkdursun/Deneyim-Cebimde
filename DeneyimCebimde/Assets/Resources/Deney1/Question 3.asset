@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d691c6818a7263047877d9ba1b604ab6, type: 3}
-  m_Name: Question 2
+  m_Name: Question 3
   m_EditorClassIdentifier: 
-  question: "uzay\u0131n ad\u0131 ne"
-  option1: uzay
-  option2: x
-  option3: y
-  option4: z
-  rightAnswer: uzay
+  question: "G\xFCne\u015Fe en uzak gezegen hangisidir ?"
+  option1: "Nept\xFCn"
+  option2: "Uran\xFCs"
+  option3: Mars
+  option4: "D\xFCnya"
+  rightAnswer: "Nept\xFCn"

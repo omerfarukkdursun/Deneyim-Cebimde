@@ -11,6 +11,7 @@ public class Deney1kontrol : MonoBehaviour
     [SerializeField] Text winText;
 
     [SerializeField] Button [] b;
+    ParticleSystem konfeti;
 
     int count = 0;
 
@@ -44,7 +45,13 @@ public class Deney1kontrol : MonoBehaviour
         return kazandin;
     
     }
+    void konfeti_durdur() {
 
+        konfeti.Stop();
+    
+    
+    
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -59,9 +66,10 @@ public class Deney1kontrol : MonoBehaviour
             winPanel.SetActive(true);
             float f = PlayerPrefs.GetFloat("puan") + 300;
             PlayerPrefs.SetFloat("puan", f);
-            winText.text = "KAZANDIN!\nToplam Puan " + PlayerPrefs.GetFloat("puan");
+            winText.text = "\nKAZANDIN!\n\n\nToplam Puan " + PlayerPrefs.GetFloat("puan");
             count++;
-
+            //konfeti = GameObject.Find("kutlama").GetComponent<ParticleSystem>();
+            //Invoke("konfeti_durdur", 5.0f);
             foreach ( Button bx in b)
             {
                 bx.interactable = false;

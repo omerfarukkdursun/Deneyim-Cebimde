@@ -23,7 +23,7 @@ public class Deney1Butonlar : MonoBehaviour
 
     public void Ileri()
     {
-        SceneManager.LoadScene("deney2");
+        SceneManager.LoadScene("Deney2");
     }
 
     public void Bonus()

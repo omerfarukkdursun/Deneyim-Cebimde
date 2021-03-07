@@ -6,7 +6,8 @@ using UnityEngine.UI;
 
 public class Ipucu : MonoBehaviour
 {
-    string[] ipucular= {"Merkür gezegeninin solunda bir gezegen yoktur.", "Dünya, Güneşe en yakın 3. gezegendir.", "a", "b"};
+    string[] ipucular= {"Merkür gezegeninin solunda bir gezegen yoktur.", "Dünya, Güneşe en yakın 3. gezegendir.", "Jüpiterin sağında 3 gezegen daha vardır." ,
+                         "Bütün gezegenler, Neptün gezegeninin solundadır.","Uranüs ile Neptün gezegenleri yan yanadır."};
    
     [SerializeField] Text text;
     [SerializeField] GameObject panel;
@@ -24,7 +25,7 @@ public class Ipucu : MonoBehaviour
         }
         else
         {
-            text.text = "başka ipucumuz kalmamıştır!";
+            text.text = "Başka ipucunuz kalmamıştır!";
         }
     }
 
@@ -51,6 +52,7 @@ public class Ipucu : MonoBehaviour
     public void howtoplay()
     {
         panel.SetActive(true);
-        text.text ="Gezegenleri Güneşe doğru sırasıyla sıralayın ve ";
+        text.text ="Gezegenleri Güneşe doğru sıralayın ve 300 puan kazanın!\n Zorlandığın yerlerde ipucu isteye basabilirsin ama unutma 3 ipucu hakkın var ve her ipucu 50 puanını siler";
+
     }
 }

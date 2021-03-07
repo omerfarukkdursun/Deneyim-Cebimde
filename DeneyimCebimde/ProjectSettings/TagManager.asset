@@ -3,7 +3,23 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Kafa
+  - "G\xF6g\xFCsKemigi"
+  - "K\xFCrekKemigiSag"
+  - KoprucukKemigi
+  - SagPazuKemigi
+  - SagOnKolKemigi
+  - SagUylukKemigi
+  - SagElParmagi
+  - SagDizKapagi
+  - SolDirsekKemigi
+  - "SagBald\u0131rKemigi"
+  - SolAyakKemigi
+  - OmurKemigi
+  - KalcaKemigi
+  - "G\xF6g\xFCsKafesi"
+  - SolKavalKemigi
   layers:
   - Default
   - TransparentFX
