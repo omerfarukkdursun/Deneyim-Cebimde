@@ -67,7 +67,9 @@ public class Deney1kontrol : MonoBehaviour
             float f = PlayerPrefs.GetFloat("puan") + 300;
             PlayerPrefs.SetFloat("puan", f);
             winText.text = "\nKAZANDIN!\n\n\nToplam Puan " + PlayerPrefs.GetFloat("puan");
-            count++;
+            count++; 
+            winPanel.GetComponent<Animator>().SetBool("isWin", true);
+
             //konfeti = GameObject.Find("kutlama").GetComponent<ParticleSystem>();
             //Invoke("konfeti_durdur", 5.0f);
             foreach ( Button bx in b)

@@ -26,6 +26,13 @@ public class Deney2Kontrol : MonoBehaviour
             float f = PlayerPrefs.GetFloat("puan") + 300;
             PlayerPrefs.SetFloat("puan", f);
             winText.text = "\nKAZANDIN!\n\n\nToplam Puan " + PlayerPrefs.GetFloat("puan");
+            winPanel.GetComponent<Animator>().SetBool("isWin", true);
+
+            foreach (GameObject i in iskelet)
+            {
+                i.GetComponent<DragandDrop>().enabled = false;
+            }
+
             foreach (Button bx in b)
             {
                 bx.interactable = false;

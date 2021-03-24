@@ -59,6 +59,11 @@ public class Butonlar : MonoBehaviour
         SceneManager.LoadScene("Deney2");
 
     }
+    public void deney3Buton()
+    {
+        SceneManager.LoadScene("Deney3");
+
+    }
     public void GeriButon()
     {
         giriscanvas.gameObject.SetActive(true);

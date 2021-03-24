@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class Deney2Ipucu : MonoBehaviour
 {
-    string[] ipucular = {"deney2 ipucu","sdsd","sd23"};
+    string[] ipucular = {"ipucu1","ipucu2","ipucu3","ipucu4"};
 
     [SerializeField] Text text;
     [SerializeField] GameObject panel;
@@ -54,7 +54,7 @@ public class Deney2Ipucu : MonoBehaviour
     public void howtoplay()
     {
         panel.SetActive(true);
-        text.text = "Deney2 oynan";
+        text.text = "Deney2 oynanış";
 
     }
 }

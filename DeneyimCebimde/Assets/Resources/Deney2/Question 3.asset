@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d691c6818a7263047877d9ba1b604ab6, type: 3}
   m_Name: Question 3
   m_EditorClassIdentifier: 
-  question: sdasd
-  option1: avv
-  option2: "Uran\xFCs"
-  option3: Mars
-  option4: "D\xFCnya"
-  rightAnswer: avv
+  question: soru3
+  option1: a
+  option2: b
+  option3: c
+  option4: d
+  rightAnswer: c
