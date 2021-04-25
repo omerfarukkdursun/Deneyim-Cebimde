@@ -38,7 +38,7 @@ public class Deney5Kontrol : MonoBehaviour
         }
         else if (counter == 2)
         {
-            text.text = "- Gorev 3 - \n   Suyu Buharlaştır";
+            text.text = "- Gorev 3 - \n   Suyu Buharlastir";
             buz.SetActive(false);
             BuharlaşanSu.SetActive(true);
 
@@ -53,7 +53,7 @@ public class Deney5Kontrol : MonoBehaviour
             PlayerPrefs.SetFloat("puan", f);
             winText.text = "\nKAZANDIN!\n\n\nToplam Puan " + PlayerPrefs.GetFloat("puan");
             winPanel.GetComponent<Animator>().SetBool("isWin", true);
-
+            counter++;
         }
 
     }

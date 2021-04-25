@@ -294,6 +294,93 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 17977572}
   m_CullTransparentMesh: 1
+--- !u!1 &73604547
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 73604551}
+  - component: {fileID: 73604550}
+  - component: {fileID: 73604549}
+  - component: {fileID: 73604548}
+  m_Layer: 0
+  m_Name: QuizManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &73604548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 73604547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7ff809c883dc33458c274cebe8f2d15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &73604549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 73604547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0733fb75ff8c7964ebdded00a551c224, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttons:
+  - {fileID: 487680929}
+  - {fileID: 1049955516}
+  - {fileID: 437992276}
+  - {fileID: 1228875596}
+  toplampuan: {fileID: 748426395}
+  "art\u0131puan": {fileID: 1193468925}
+--- !u!114 &73604550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 73604547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ecd4393d61e44e4a961655abf7fdc6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questionTxt: {fileID: 649799105}
+  option1Txt: {fileID: 1307141804}
+  option2Txt: {fileID: 620805737}
+  option3Txt: {fileID: 1898145613}
+  option4Txt: {fileID: 789523598}
+  panel: {fileID: 1349358936}
+  b: {fileID: 1957865593}
+  questions:
+  - {fileID: 11400000, guid: b55b8b577fbf633429339be7330891b8, type: 2}
+  - {fileID: 11400000, guid: f5521965dbf84a241bbace15933961a7, type: 2}
+  - {fileID: 11400000, guid: b6cb83a5c7ddca44cbd8641529a70843, type: 2}
+--- !u!4 &73604551
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 73604547}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 500.1851, y: 839.3655, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &190923485
 GameObject:
   m_ObjectHideFlags: 0
@@ -956,6 +1043,7 @@ MonoBehaviour:
   panel: {fileID: 466817960}
   winpanel: {fileID: 533095719}
   bonuspanel: {fileID: 1349358936}
+  text: {fileID: 820264784}
 --- !u!4 &353571183
 Transform:
   m_ObjectHideFlags: 0
@@ -986,7 +1074,7 @@ MonoBehaviour:
   buz: {fileID: 1715557343}
   DonanSu: {fileID: 250158773}
   "Buharla\u015FanSu": {fileID: 317052448}
-  winText: {fileID: 1353175899}
+  winText: {fileID: 691460369}
   text: {fileID: 1353175899}
   counter: 0
 --- !u!1 &393100870
@@ -1308,7 +1396,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 73604549}
         m_MethodName: Control
         m_Mode: 2
         m_Arguments:
@@ -1515,7 +1603,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 73604549}
         m_MethodName: Control
         m_Mode: 2
         m_Arguments:
@@ -2620,7 +2708,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 353571182}
         m_MethodName: Bonus
         m_Mode: 1
         m_Arguments:
@@ -2942,7 +3030,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 353571182}
         m_MethodName: panelKapat
         m_Mode: 1
         m_Arguments:
@@ -3150,7 +3238,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 73604549}
         m_MethodName: Control
         m_Mode: 2
         m_Arguments:
@@ -3621,7 +3709,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 73604549}
         m_MethodName: Control
         m_Mode: 2
         m_Arguments:
@@ -4098,6 +4186,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 1345922380}
   panel: {fileID: 466817960}
+  text2: {fileID: 820264784}
 --- !u!4 &1527586682
 Transform:
   m_ObjectHideFlags: 0
@@ -4860,7 +4949,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 353571182}
         m_MethodName: Geri
         m_Mode: 1
         m_Arguments:
@@ -5146,7 +5235,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 73604548}
         m_MethodName: Next
         m_Mode: 1
         m_Arguments:

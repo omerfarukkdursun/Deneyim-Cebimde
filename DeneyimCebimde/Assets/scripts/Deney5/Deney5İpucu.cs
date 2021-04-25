@@ -10,12 +10,13 @@ public class Deney5İpucu : MonoBehaviour
 
     [SerializeField] Text text;
     [SerializeField] GameObject panel;
+    [SerializeField] GameObject text2;
 
 
     public void showipucu()
     {
-        
 
+        text2.SetActive(false);
         if (ipucular.Length > 0)
         {
             float p = PlayerPrefs.GetFloat("puan");
@@ -54,7 +55,7 @@ public class Deney5İpucu : MonoBehaviour
 
     public void howtoplay()
     {
-        
+        text2.SetActive(false);
         panel.SetActive(true);
         text.text = "Deney2 oynanış";
 
