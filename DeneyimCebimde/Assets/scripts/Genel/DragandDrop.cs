@@ -20,9 +20,7 @@ public class DragandDrop : MonoBehaviour
     {
         if (IsDraging) {
             Vector2 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
-            transform.Translate(pos);
-        
-        
+            transform.Translate(pos);        
         }
     }
 }
