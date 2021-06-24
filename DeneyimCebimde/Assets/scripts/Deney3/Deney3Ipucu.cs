@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class Deney3Ipucu : MonoBehaviour
 {
-    string[] ipucular = { "ipucu1", "ipucu2", "ipucu3,ipucu4" };
+    string[] ipucular = { "Su iletken bir maddedir.", "Altın iletken bir maddedir.", "Plastik şişe yalıtkan bir maddedir,Saman yalıtkan bir maddedir." };
 
     [SerializeField] Text text;
     [SerializeField] GameObject panel;
@@ -54,7 +54,7 @@ public class Deney3Ipucu : MonoBehaviour
     public void howtoplay()
     {
         panel.SetActive(true);
-        text.text = "Deney3 oynanış";
+        text.text = "5 adet yalıtkanı bularak çarpılan adamı kurtararak deneyini tamamla ve 300 puan kazan. \n. Zorlandığın yerlerde ipucu isteye basabilirsin ama unutma 3 ipucu hakkın var ve her ipucu 50 puanını siler";
 
     }
 }

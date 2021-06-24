@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d691c6818a7263047877d9ba1b604ab6, type: 3}
   m_Name: Question2
   m_EditorClassIdentifier: 
-  question: soru2
-  option1: a
-  option2: b
-  option3: c
-  option4: d
-  rightAnswer: b
+  question: "Elektirik \xE7arpan birini kurtarmak i\xE7in a\u015F\u015Fa\u011F\u0131dakilerden
+    hangisi kullan\u0131lmaz ?"
+  option1: Saman
+  option2: "Plastik \u015Ei\u015Fe"
+  option3: "Alt\u0131n"
+  option4: Pamuk
+  rightAnswer: "Alt\u0131n"

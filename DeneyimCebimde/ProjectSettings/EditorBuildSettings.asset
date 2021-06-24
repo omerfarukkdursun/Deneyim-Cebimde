@@ -26,4 +26,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Deney5.unity
     guid: cf713b3be03612a49ad0f9cc0e6bb44e
+  - enabled: 1
+    path: Assets/Scenes/Deney6.unity
+    guid: a13589518b2d2ba47a0bf7a276bc0a61
+  - enabled: 1
+    path: Assets/Scenes/Deney7.unity
+    guid: 661569cb7a1eaf84d947e081d3842eeb
   m_configObjects: {}

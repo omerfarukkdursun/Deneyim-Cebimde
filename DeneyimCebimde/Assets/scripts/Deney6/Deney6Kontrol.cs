@@ -43,12 +43,6 @@ public class Deney6Kontrol : MonoBehaviour
     {
         adam.GetComponent<Animator>().enabled = true;
         adam.GetComponent<Animator>().SetBool("yemek", true);
-    }
-
-    public void CloseButtons()
-    {
-        //yemekButton.SetActive(false);
-       // adam.SetActive(false);
-        
+        sporButon.gameObject.SetActive(false);
     }
 }

@@ -12,9 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d691c6818a7263047877d9ba1b604ab6, type: 3}
   m_Name: Question 3
   m_EditorClassIdentifier: 
-  question: soru3
-  option1: a
-  option2: b
-  option3: c
-  option4: d
-  rightAnswer: c
+  question: "Kemiklerin aras\u0131nda bo\u015Flu\u011Fun bulunmad\u0131\u011F\u0131
+    eklem \xE7e\u015Fidi a\u015Fa\u011F\u0131da verilenlerden organlar\u0131n hangisine
+    bulunur?"
+  option1: "Kafatas\u0131"
+  option2: Boyun
+  option3: Kol
+  option4: "G\xF6\u011F\xFCs Kafesi"
+  rightAnswer: "Kafatas\u0131"

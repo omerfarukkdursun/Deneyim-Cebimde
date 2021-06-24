@@ -17,11 +17,9 @@ public class ArabaAlanı : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        //if (Deney4Kontrol.secilenAdam != null)
-        //{
-        //    Deney4Kontrol.secilenAlan = null;
-        //    Deney4Kontrol.secilenAdam = null;
-        //}
+        if (Deney4Kontrol.check) {
+            Deney4Kontrol.secilenAdam = null;   
+        }
     }
 
 }

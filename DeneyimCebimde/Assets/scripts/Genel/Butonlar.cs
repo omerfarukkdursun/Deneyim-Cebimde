@@ -2,18 +2,48 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Butonlar : MonoBehaviour
 {
     public Canvas giriscanvas;
     public Canvas deneyoncesicanvas;
     public Canvas basarilarcanvas;
+    private int counter = 0;
+    private AudioSource ses1;
+    public Button yourButton;
+    public Sprite sesClose;
+    public Sprite sesOpen;
 
     [SerializeField]bool delete = false;
 
+    public void Sound()
+    {
+        ses1 = GameObject.Find("MusicPlayer").GetComponent<AudioSource>();
+        Debug.Log("sound");
+        if (counter == 0)
+        {
+            ses1.Stop();
+            yourButton.GetComponent<Image>().sprite = sesClose;
+            counter++;
+        }
+        else
+        {
+            ses1.Play();
+            yourButton.GetComponent<Image>().sprite = sesOpen;
+            counter = 0;
+        }
+    }
+
     private void Start()
     {
-        if(PlayerPrefs.GetInt("deneyoncesicanvas") == 1)
+        if (GameObject.Find("MusicPlayButton") != null)
+        {
+            yourButton = GameObject.Find("MusicPlayButton").GetComponent<Button>();
+            yourButton.onClick.AddListener(Sound);
+        }
+            
+        if (PlayerPrefs.GetInt("deneyoncesicanvas") == 1)
         {
             deneyoncesicanvas.gameObject.SetActive(true);
         }
@@ -72,6 +102,16 @@ public class Butonlar : MonoBehaviour
     public void deney5Buton()
     {
         SceneManager.LoadScene("Deney5");
+
+    }
+    public void deney6Buton()
+    {
+        SceneManager.LoadScene("Deney6");
+
+    }
+    public void deney7Buton()
+    {
+        SceneManager.LoadScene("Deney7");
 
     }
     public void GeriButon()

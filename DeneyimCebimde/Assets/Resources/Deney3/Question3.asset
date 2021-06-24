@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d691c6818a7263047877d9ba1b604ab6, type: 3}
   m_Name: Question3
   m_EditorClassIdentifier: 
-  question: saoru3
-  option1: a
-  option2: b
-  option3: c
-  option4: d
-  rightAnswer: c
+  question: "Elektirik \xE7arpmalar\u0131nda nelere dikkat edilmedilir?"
+  option1: "Sigorta kapat\u0131lmal\u0131d\u0131r."
+  option2: "\xC7arp\u0131lan ki\u015Fiye \xE7\u0131plak elle dokunulmamal\u0131d\u0131r."
+  option3: "Yal\u0131tkan bir madde ile ki\u015Fi kurtar\u0131lmal\u0131d\u0131r."
+  option4: Hepsi
+  rightAnswer: Hepsi

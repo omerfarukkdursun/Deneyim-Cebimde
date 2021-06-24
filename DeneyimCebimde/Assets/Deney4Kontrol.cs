@@ -8,8 +8,11 @@ public class Deney4Kontrol : MonoBehaviour
 
     public static GameObject secilenAlan;
     public static GameObject secilenAdam;
+    public static bool check = true;
+
     [SerializeField] GameObject winPanel;
     [SerializeField] Text winText;
+    [SerializeField] Text ivmeText;
 
     public GameObject araba;
 
@@ -37,6 +40,7 @@ public class Deney4Kontrol : MonoBehaviour
     {
         if (kuvvet == (agirlik * ivme) && kuvvet != 0 && agirlik != 0)
         {
+            check = false;
             secilenAdam.GetComponent<DragandDrop>().enabled = false;
             if (count == 0)
             {
@@ -75,6 +79,7 @@ public class Deney4Kontrol : MonoBehaviour
         {
             string adam = secilenAdam.name;
             string araba = secilenAlan.name;
+            Debug.Log(adam);
 
             if (adam == "KasliAdam")
                 kuvvet = kasliAdamF;
@@ -104,6 +109,7 @@ public class Deney4Kontrol : MonoBehaviour
                 PlayerPrefs.SetFloat("puan", f);
                 winText.text = "\nKAZANDIN!\n\n\nToplam Puan " + PlayerPrefs.GetFloat("puan");
                 winPanel.GetComponent<Animator>().SetBool("isWin", true);
+                ivmeText.gameObject.SetActive(false);
             }
         }
     }

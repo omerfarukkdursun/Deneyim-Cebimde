@@ -1,18 +1,34 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Deney6Buton : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] GameObject panel;
+    [SerializeField] GameObject winpanel;
+    [SerializeField] GameObject bonuspanel;
+
+    public void Geri()
     {
-        
+        SceneManager.LoadScene("Menu");
     }
 
-    // Update is called once per frame
-    void Update()
+    public void panelKapat()
     {
-        
+
+        panel.gameObject.SetActive(false);
+
+    }
+
+    public void Ileri()
+    {
+        SceneManager.LoadScene("Deney7");
+    }
+
+    public void Bonus()
+    {
+        bonuspanel.gameObject.SetActive(true);
+        winpanel.gameObject.SetActive(false);
     }
 }

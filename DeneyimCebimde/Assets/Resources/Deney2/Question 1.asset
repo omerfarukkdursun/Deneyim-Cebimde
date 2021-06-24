@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d691c6818a7263047877d9ba1b604ab6, type: 3}
   m_Name: Question 1
   m_EditorClassIdentifier: 
-  question: soru1
-  option1: a
-  option2: b
-  option3: c
-  option4: d
-  rightAnswer: a
+  question: "A\u015F\u015Fa\u011F\u0131dakilerden hangisi iskelet sisteminin g\xF6revi
+    de\u011Fildir ?"
+  option1: "V\xFCcudumuza \u015Fekil verir."
+  option2: "Hareket etmemizi sa\u011Flar."
+  option3: "Kan h\xFCcreleri \xFCretir."
+  option4: "Kan\u0131n temizlenmesini sa\u011Flar."
+  rightAnswer: "Kan\u0131n temizlenmesini sa\u011Flar."

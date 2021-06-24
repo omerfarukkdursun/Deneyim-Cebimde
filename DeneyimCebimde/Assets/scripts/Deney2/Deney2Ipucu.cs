@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class Deney2Ipucu : MonoBehaviour
 {
-    string[] ipucular = {"ipucu1","ipucu2","ipucu3","ipucu4"};
+    string[] ipucular = {"Köprücük Kemiği düz bir çizgi gibidir. ","Uyluk Kemiğinin altında diz kapağı boşluğu olmalıdır","Kaburga Kemiği kafes şeklindedir."};
 
     [SerializeField] Text text;
     [SerializeField] GameObject panel;
@@ -54,7 +54,7 @@ public class Deney2Ipucu : MonoBehaviour
     public void howtoplay()
     {
         panel.SetActive(true);
-        text.text = "Deney2 oynanış";
+        text.text = "İskeletleri doğru kutulara koyarak deneyini tamamla ve 300 puan kazan. \n  Zorlandığın yerlerde ipucu isteye basabilirsin ama unutma 3 ipucu hakkın var ve her ipucu 50 puanını siler ";
 
     }
 }

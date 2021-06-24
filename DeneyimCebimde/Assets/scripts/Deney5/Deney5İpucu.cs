@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class Deney5İpucu : MonoBehaviour
 {
-    string[] ipucular = { "ipucu1", "ipucu2", "ipucu3", "ipucu4" };
+    string[] ipucular = { "Suyu buharlaştırmak için ısıtıcının üstüne getir.", "Suyu soğutmak için soğutucunun üstüne getir.", "Buzu sıvı hale getirmek için ısıtıcının üstüne getir." };
 
     [SerializeField] Text text;
     [SerializeField] GameObject panel;
@@ -57,7 +57,7 @@ public class Deney5İpucu : MonoBehaviour
     {
         text2.SetActive(false);
         panel.SetActive(true);
-        text.text = "Deney2 oynanış";
+        text.text = "Tahtada veriken görevleri yaparak deneyini tamamla ve 300 puan kazan. \n. Zorlandığın yerlerde ipucu isteye basabilirsin ama unutma 3 ipucu hakkın var ve her ipucu 50 puanını siler";
 
     }
 }

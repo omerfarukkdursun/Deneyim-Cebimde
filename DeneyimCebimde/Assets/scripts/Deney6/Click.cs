@@ -9,6 +9,10 @@ public class Click : MonoBehaviour
 
     [SerializeField] GameObject winPanel;
     [SerializeField] Text winText;
+    [SerializeField] GameObject yemek;
+    [SerializeField] GameObject spor;
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -36,9 +40,14 @@ public class Click : MonoBehaviour
                 PlayerPrefs.SetFloat("puan", f);
                 winText.text = "\nKAZANDIN!\n\n\nToplam Puan " + PlayerPrefs.GetFloat("puan");
                 winPanel.GetComponent<Animator>().SetBool("isWin", true);
-
-                gameObject.GetComponent<Deney6Kontrol>().CloseButtons();
-
+                if(yemek != null)
+                {
+                    yemek.SetActive(false);
+                }
+                if (spor != null)
+                {
+                    spor.SetActive(false);
+                }
             }
         }
     }

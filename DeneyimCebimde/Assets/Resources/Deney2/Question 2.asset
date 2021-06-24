@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d691c6818a7263047877d9ba1b604ab6, type: 3}
   m_Name: Question 2
   m_EditorClassIdentifier: 
-  question: soru2
-  option1: a
-  option2: b
-  option3: c
-  option4: d
-  rightAnswer: b
+  question: "A\u015Fa\u011F\u0131dakilerden hangisi iskelet sistemini olu\u015Fturan
+    kemiklerden de\u011Fildir?"
+  option1: "K\xFCrek"
+  option2: "G\xF6z"
+  option3: Uyluk
+  option4: Kaburga
+  rightAnswer: "G\xF6z"

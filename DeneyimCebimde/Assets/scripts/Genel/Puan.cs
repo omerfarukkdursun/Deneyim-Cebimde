@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Puan : MonoBehaviour
 {
@@ -13,7 +14,10 @@ public class Puan : MonoBehaviour
     public static float tecrubeliHedef = 800;
     public static float ustaHedef = 1200;
     public static float bilimAdamiHedef = 1700;
+    
 
+
+   
     public void deneyimSeviyesiBul() {
         if (puan>=0 && puan <= baslangicHedef)
         {
