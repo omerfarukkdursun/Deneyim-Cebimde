@@ -2179,9 +2179,9 @@ MonoBehaviour:
   panel: {fileID: 1526761613}
   b: {fileID: 507557192}
   questions:
-  - {fileID: 11400000, guid: f00b4ea8ba0835b4cba10c929598ab4c, type: 2}
-  - {fileID: 11400000, guid: 5c2bc7204c4aa96408b4081d8b9b5296, type: 2}
-  - {fileID: 11400000, guid: 5754cb52748512b4ea7f614535c1b221, type: 2}
+  - {fileID: 11400000, guid: 2c4543b4680260942b1b872d1fb4676a, type: 2}
+  - {fileID: 11400000, guid: e6fbe1480415a094a99da1f3bdd572f5, type: 2}
+  - {fileID: 11400000, guid: 3f510ca9e0942884189ceefcd46b5b84, type: 2}
 --- !u!4 &1032670184
 Transform:
   m_ObjectHideFlags: 0
